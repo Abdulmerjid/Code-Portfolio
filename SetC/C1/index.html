@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Personal Dashboard</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <h1>
+            Personal Dashboard
+        </h1>
+
+        <!-- Weather -->
+        <div class="card fade-in">
+
+            <h2>Weather</h2>
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city"
+            >
+
+            <button id="weatherBtn">
+                Get Weather
+            </button>
+
+            <div id="weather">
+            </div>
+
+        </div>
+
+
+        <!-- Quote -->
+        <div class="card slide-up">
+
+            <h2>
+                Random Quote
+            </h2>
+
+            <button id="quoteBtn">
+                New Quote
+            </button>
+
+            <p id="quote">
+                Loading quote...
+            </p>
+
+        </div>
+
+
+        <!-- Todo -->
+        <div class="card zoom-in">
+
+            <h2>
+                To-Do List
+            </h2>
+
+            <input
+                type="text"
+                id="todoInput"
+                placeholder="Add task"
+            >
+
+            <button id="addTodoBtn">
+                Add Task
+            </button>
+
+            <ul id="todoList">
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
